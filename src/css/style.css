@@ -74,6 +74,8 @@ body::before {
     height: 430px; */
     width: 340px;
     height: 340px;
+    transform: translateX(0px);
+    animation: float 4s ease-out infinite;
 }
 
 .personagem-selecionado .nome-personagem {
@@ -90,3 +92,15 @@ body::before {
     width: 420px;
 }
 
+/* ANIMAÇÕES */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
